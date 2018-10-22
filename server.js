@@ -1,8 +1,8 @@
 const express = require('express')
 const exphbs  = require('express-handlebars');
 
-const app = express()
-const port = 3000
+const app = express();
+const port = process.env.PORT || 3000;
 
 app.engine('.hbs', exphbs({extname: '.hbs'}));
 app.set('view engine', '.hbs');
