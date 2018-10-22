@@ -11,7 +11,7 @@ app.use(express.static('public'))
 
 // ROOT ROUTE
 app.get('/', (req, res) => {
-  res.render('home');
+  res.render('home', { stuff: "hey this is some stuff"});
 })
 
 app.listen(port, () => {
